@@ -164,12 +164,22 @@
         .score-badge { font-size: 3.5rem; font-weight: 800; color: var(--accent-yellow); margin: 15px 0; font-family: 'Fredoka', sans-serif; text-shadow: 2px 2px 0px var(--deep-pink); }
 
         /* ==========================================================================
-           5. PILAR KARAKTER GRID
+           5. PILAR KARAKTER GRID & MATERI
            ========================================================================== */
         .grid-pilar { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
         .card-pilar { background: var(--bg-card); padding: 35px 25px; border-radius: 26px; border: 2px solid var(--light-pink); text-align: center; transition: var(--transition-bounce); cursor: pointer; }
         .card-pilar:hover { transform: translateY(-10px); border-color: var(--primary-pink); box-shadow: 0 15px 35px var(--shadow-pink); }
         .icon-box { width: 70px; height: 70px; background-color: var(--light-pink); color: var(--primary-pink); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 20px; }
+
+        .materi-container {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px;
+        }
+        .materi-card {
+            background: var(--bg-card); padding: 30px; border-radius: 24px; border-left: 5px solid var(--primary-pink);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.02); transition: var(--transition-bounce);
+        }
+        .materi-card:hover { transform: scale(1.02); box-shadow: 0 15px 30px var(--shadow-pink); }
+        .materi-card h3 { color: var(--primary-pink); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
 
         /* ==========================================================================
            6. POP-UP MODAL BOX
@@ -205,6 +215,7 @@
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#game-zone">Game Zone</a></li>
                 <li><a href="#sifat-mulia">4 Pilar</a></li>
+                <li><a href="#materi-edukasi">Materi</a></li>
             </ul>
             <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
         </div>
@@ -215,7 +226,7 @@
             <div class="hero-content">
                 <h1>Akhlak Rasulullah: <br><span>Adab Keren di Dunia Cyber</span></h1>
                 <p style="margin-bottom: 15px; font-style: italic; color: var(--primary-pink); font-weight: 600;">
-                    <span style="font-family: 'Times New Roman', serif; font-size: 1.4rem; font-style: normal;">إِنَّمَا بُعِثْتُ لِأُتَمِّمَ صَالِحَ الْأَخْلَاقِ</span><br>
+                    <span style="font-family: 'Times New Roman', serif; font-size: 1.4rem; font-style: normal;">إِنَّمَا بُعِثْتُ لِأُتَمِّمَ صَالِحَ الْأَخْلَاقِ</span><br>
                     "Sesungguhnya aku diutus hanya untuk menyempurnakan kesalehan akhlak." (HR. Ahmad)
                 </p>
                 <p>Nggak cuma asal ketik status! Yuk, bangun persona digitalmu agar tetap santun, aman dari jebakan hoax, dan berkarakter mulia berlandaskan keteladanan Nabi Muhammad SAW.</p>
@@ -307,6 +318,82 @@
         </div>
     </section>
 
+    <!-- SEKSI TAMBAHAN: MATERI EDUKASI ISLAM DIGITAL -->
+    <section class="content-section" id="materi-edukasi" style="background-color: var(--light-pink); border-radius: 50px 50px 0 0;">
+        <div class="section-header">
+            <span class="tag-section">Ringkasan Materi</span>
+            <h2 class="section-title">Fiqih Muamalah <span>Media Sosial</span></h2>
+            <p>Panduan penting bagi generasi muslim masa kini dalam mengoperasikan perangkat teknologi komunikasi.</p>
+        </div>
+
+        <div class="materi-container">
+
+    <div class="materi-card">
+        <h3><i class="fa-solid fa-square-check"></i> Kewajiban Tabayyun</h3>
+
+        <span class="text-arabic">
+            يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا
+        </span>
+
+        <p><strong>QS. Al-Hujurat: 6</strong></p>
+
+        <p>
+            "Wahai orang-orang yang beriman! Jika seseorang yang fasik datang
+            kepadamu membawa suatu berita, maka telitilah kebenarannya."
+        </p>
+
+        <p>
+            Sesuai dengan Al-Qur'an Surah Al-Hujurat ayat 6, setiap muslim wajib
+            memeriksa legalitas dan kebenaran informasi (<i>check and recheck</i>)
+            sebelum menyebarkannya kembali untuk menghindari fitnah massal.
+        </p>
+    </div>
+
+    <div class="materi-card">
+        <h3><i class="fa-solid fa-comment-slash"></i> Hindari Ghibah Digital</h3>
+
+        <span class="text-arabic">
+            وَلَا يَغْتَبْ بَعْضُكُمْ بَعْضًا
+        </span>
+
+        <p><strong>QS. Al-Hujurat: 12</strong></p>
+
+        <p>
+            "Dan janganlah sebagian kamu menggunjing sebagian yang lain."
+        </p>
+
+        <p>
+            Membicarakan keburukan orang lain melalui kolom komentar,
+            forum gosip online, maupun menyebarkan tangkapan layar privasi
+            (<i>cyber-bullying</i>) dilarang karena merusak kehormatan sesama manusia.
+        </p>
+    </div>
+
+    <div class="materi-card">
+        <h3><i class="fa-solid fa-hourglass-half"></i> Efisiensi Waktu (Umur)</h3>
+
+        <span class="text-arabic">
+            مِنْ حُسْنِ إِسْلَامِ الْمَرْءِ تَرْكُهُ مَا لَا يَعْنِيهِ
+        </span>
+
+        <p><strong>HR. Tirmidzi</strong></p>
+
+        <p>
+            "Di antara tanda baiknya Islam seseorang adalah meninggalkan sesuatu
+            yang tidak bermanfaat baginya."
+        </p>
+
+        <p>
+            Rasulullah SAW mengajarkan umatnya untuk memanfaatkan waktu dengan baik.
+            Bijak membatasi <i>screen time</i> demi produktivitas ibadah, belajar,
+            dan aktivitas nyata merupakan bentuk penerapan sifat Fathonah dalam
+            kehidupan digital.
+        </p>
+    </div>
+
+</div>
+    </section>
+
     <div class="modal" id="infoModal">
         <div class="modal-content">
             <span class="close-modal" onclick="tutupModal()">&times;</span>
@@ -321,11 +408,21 @@
                 <h3>DigitalAkhlak</h3>
                 <p style="opacity: 0.7; font-size: 0.9rem; margin-top: 10px;">Platform interaktif edukasi penanaman budi pekerti Islam digital modern terpercaya untuk Generasi Z & Alfa.</p>
             </div>
-            <div class="identity-box" style="text-align: right;">
-                <h4>Tugas UAS Pendidikan Agama Islam</h4>
-                <p><strong>NAMA :</strong> FIRZANA BILQIS SERENITY</p>
-                <p><strong>NIM :</strong> K3525061</p>
-            </div>
+            <div class="identity-box tugas-box">
+    <h4><i class="fa-solid fa-graduation-cap"></i> Tugas UAS Pendidikan Agama Islam</h4>
+
+    <div class="student-info">
+        <div class="info-item">
+            <span class="label">Nama</span>
+            <span class="value">Firzana Bilqis Serenity</span>
+        </div>
+
+        <div class="info-item">
+            <span class="label">NIM</span>
+            <span class="value">K3525061</span>
+        </div>
+    </div>
+</div>
         </div>
         <div style="text-align: center; margin-top: 40px; font-size: 0.8rem; opacity: 0.5;">
             &copy; 2026 DigitalAkhlak. Menggunakan Karakter Mulia untuk Dunia Maya yang Damai.
